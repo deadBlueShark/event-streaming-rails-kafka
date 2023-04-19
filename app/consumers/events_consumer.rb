@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 # Example consumer that prints messages payloads
-class ExampleConsumer < ApplicationConsumer
+class EventsConsumer < ApplicationConsumer
   def consume
+    puts "Hello from consumer!"
     messages.each { |message| puts message.payload }
   end
 
