@@ -114,6 +114,12 @@ GEM
       ffi (~> 1.15)
       mini_portile2 (~> 2.6)
       rake (> 12)
+    karafka-web (0.5.1)
+      erubi (~> 1.4)
+      karafka (>= 2.0.40, < 3.0.0)
+      karafka-core (>= 2.0.12, < 3.0.0)
+      roda (~> 3.63)
+      tilt (~> 2.0)
     loofah (2.20.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -181,6 +187,8 @@ GEM
     reline (0.3.3)
       io-console (~> 0.5)
     rexml (3.2.5)
+    roda (3.67.0)
+      rack
     rubyzip (2.3.2)
     selenium-webdriver (4.8.6)
       rexml (~> 3.2, >= 3.2.5)
@@ -198,6 +206,7 @@ GEM
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     thor (1.2.1)
+    tilt (2.1.0)
     timeout (0.3.2)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
@@ -235,6 +244,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   karafka
+  karafka-web
   puma (~> 5.0)
   rails (~> 7.0.4)
   redis (~> 4.0)
